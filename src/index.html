@@ -2,22 +2,46 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/svg+xml" href="" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vanilla App Template</title>
+    <title>All about me</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
-    <load ="partials/header.html" />
-
-    <section>
-      <h1>Example page title</h1>
-      <!-- Path to images as from index.html file -->
-      <img src="./img/javascript.svg" alt="" />
+    <section class="header">
+      <div class="header-container container">
+      <img src="" alt="I am" width="80" height="80"/>
+      <svg width="84" height="19"><use></use></svg>
+      <nav class="header-nav">
+      <ul class="header-menu">
+        <li class="header-link">Menu</li>
+        <li class="header-link">About me</li>
+        <li class="header-link">Benefits</li>
+        <li class="header-link">Projects</li>
+        <li class="header-link">FAQ</li>
+      </ul>
+      </nav>
+      <button class="header-btn" type="button">Order the project</button>
+    </div>
     </section>
-
-    <!-- Loads the specified .html file -->
-    <load ="partials/vite-promo.html" />
+    <section class="hero">
+      <h1>Hello.<br/>
+      I’m Fullstack developer
+      Lloyd Jefferson.</h1>
+    </section>
+    <section about-me></section>
+    <section benefits></section>
+    <section projects></section>
+    <section FAQ></section>
+    <section covers></section>
+    <section revies></section>
+    <section work-together></section>    
 
     <script type="module" src="./main.js"></script>
   </body>
