@@ -14,26 +14,40 @@
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
+    
     <section class="header">
       <div class="header-container container">
-      <img src="" alt="I am" width="80" height="80"/>
-      <svg width="84" height="19"><use></use></svg>
+        <div class="header-my-photo">
+      <img class="my-photo" src="./img/foto-1x.jpg" alt="I am" width="80" height="80"/>
+      <svg  width="84" height="19"><use href="./img/icons.svg#icon-jefferson"></use></svg>
+      </div>
       <nav class="header-nav">
       <ul class="header-menu">
         <li class="header-link">Menu</li>
-        <li class="header-link">About me</li>
+        <!--<li class="header-link">About me</li>
         <li class="header-link">Benefits</li>
         <li class="header-link">Projects</li>
-        <li class="header-link">FAQ</li>
+        <li class="header-link">FAQ</li>-->
       </ul>
       </nav>
       <button class="header-btn" type="button">Order the project</button>
     </div>
-    </section>
+       </section>
+
     <section class="hero">
-      <h1>Hello.<br/>
+      <div class="hero-container container">
+      <h1 class="hero-title">Hello.<br/>
       I’m Fullstack developer
       Lloyd Jefferson.</h1>
+      <div class="header-social">
+        <ul class="header-social-items">
+          <li class="header-social-link"><a href="">IG</a></li>
+          <li class="header-social-link"><a href="">FB</a></li>
+          <li class="header-social-link"><a href="">YT</a></li>
+          <li class="header-social-link"><a href="">GH</a></li>
+          <li class="header-social-email"><a type="email" name="email" id="email" href="">lloydjefferson@gmail.com</a></li>
+        </ul>
+      </div>
     </section>
     <section about-me></section>
     <section benefits></section>
@@ -41,7 +55,10 @@
     <section FAQ></section>
     <section covers></section>
     <section revies></section>
-    <section work-together></section>    
+    <section work-together>
+    </div>
+    
+    </section>    
 
     <script type="module" src="./main.js"></script>
   </body>
