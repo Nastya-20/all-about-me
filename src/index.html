@@ -1,94 +1,644 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>All about me</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,600;1,600&display=swap" rel="stylesheet" />
-      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css" />
-  </head>
-  <body>
-    
-    <!--<section class="header">
-      <div class="header-container container">
-        <div class="header-my-photo">
-      <img class="my-photo" src="./img/foto-1x.jpg" alt="I am" width="80" height="80"/>
-      <svg  width="84" height="19"><use href="./img/icons.svg#icon-jefferson"></use></svg>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <link rel="stylesheet" href="./css/styles.css" />
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <div class="header-wrapper">
+        <div class="logo-wrapper">
+          <a href="./index.html" class="image-wrapper">
+            <img src="./img/header/logo2.png" alt="logo" width="80" height="80" />
+            <p class="logo-text">jefferson*</p>
+          </a>
+        </div>
+  
+  
+        <!-- Menu -->
+  
+        <nav class="nav-menu">
+          <!-- <input type="checkbox" class="custom-checkbox" id="menu-toggle" />-->
+          <label class="menu-button man-button" aria-label="Open menu">Menu</label>
+          <ul class="menu-list">
+            <li class="menu-list-item" aria-label="To About me">
+              <a href="#aboutme-section" class="manu-list-seca">About me</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#benefits-section" aria-label="To Benefits" class="manu-list-secb">Benefits</a>
+            </li>
+            <li class="menu-list-item">
+              <a href="#projects-section" aria-label="To Projects" class="manu-list-secc">Projects</a>
+            </li>
+            <li class="menu-list-item" aria-label="To FAQ">
+              <a href="#faq-section" class="manu-list-secd">FAQ</a>
+            </li>
+          </ul>
+        </nav>
+  
+        <div class="btn-wrapper">
+          <a href="#worktogether" class="order-btn">Order the project</a>
+        </div>
+  
+  
+        <button class="open-burger" aria-label="close window">
+          <svg class="burger-icon" width="28" height="28">
+            <use href="./img/header/header-svg.svg#icon-burger"></use>
+          </svg>
+        </button>
       </div>
-      <nav class="header-nav">
-      <ul class="header-menu">
-        <li class="header-link">Menu</li>
-        <li class="header-link">About me</li>
-        <li class="header-link">Benefits</li>
-        <li class="header-link">Projects</li>
-        <li class="header-link">FAQ</li>
-      </ul>
-      </nav>
-      <button class="header-btn" type="button">Order the project</button>
     </div>
-       </section>
-
-    <section class="hero">
-      <div class="hero-container container">
-      <h1 class="hero-title">Hello.<br/>
-      I’m Fullstack developer
-      Lloyd Jefferson.</h1>
-      <div class="header-social">
-        <ul class="header-social-items">
-          <li class="header-social-link"><a href="">IG</a></li>
-          <li class="header-social-link"><a href="">FB</a></li>
-          <li class="header-social-link"><a href="">YT</a></li>
-          <li class="header-social-link"><a href="">GH</a></li>
-          <li class="header-social-email"><a type="email" name="email" id="email" href="">lloydjefferson@gmail.com</a></li>
+  </header>
+  
+  <!-- Menu Mob -->
+  
+  <div class="modal-overlay">
+    <div class="modal-header">
+      <nav class="navigation-modal">
+        <ul class="nav-list">
+          <li class="nav-item">
+  
+            <a href="#aboutme-section" class="modal-text" aria-label="To About me">About me</a>
+  
+          </li>
+          <li class="nav-item">
+            <a href="#benefits-section" class="modal-text" aria-label="To Benefits">Benefits</a>
+  
+          </li>
+          <li class="nav-item">
+            <a href="#projects-section" class="modal-text" aria-label="To Project">Projects</a>
+  
+          </li>
+          <li class="nav-item">
+            <a href="#faq-section" class="modal-text" aria-label="To FAQ">FAQ</a>
+          </li>
         </ul>
-      </div>
-    </section>
-    <section about-me></section>
-    <section benefits></section>
-    <section projects></section>
-    <section FAQ></section>
-    <section covers></section>-->
-    <section class="reviews" id="reviews.html">
-      <div class="reviews-container container">
-      <h3 class="reviews-title">REVIEWS</h3>
-      <ul class="reviews-list">
-        <li class="reviews-items">
-          <img class="reviews-img" src="./img/girl1-2x1440.jpg" alt="Natalia"/>
-          <h3 class="review-title">Natalia</h3>
-          <p class="review-text">Work with was extraordinary! He turned out to be a very competent and responsible specialist. The projects were
-          completed on time and the result exceeded my expectations</p>
-        </li>
-        <li class="reviews-items">
-          <img class="reviews-img" src="./img/girl1-2x1440.jpg" alt="Natalia" />
-        <h3 class="review-title">Natalia</h3>
-        <p class="review-text">Work with was extraordinary! He turned out to be a very competent and responsible specialist. The
-          projects were
-          completed on time and the result exceeded my expectations</p></li>
-        <li class="reviews-items"><img class="reviews-img" src="./img/girl1-2x1440.jpg" alt="Natalia" />
-        <h3 class="review-title">Natalia</h3>
-        <p class="review-text">Work with was extraordinary! He turned out to be a very competent and responsible specialist. The
-          projects were
-          completed on time and the result exceeded my expectations</p></li>
-        <li class="reviews-items"><img class="reviews-img" src="./img/girl1-2x1440.jpg" alt="Natalia" />
-        <h3 class="review-title">Natalia</h3>
-        <p class="review-text">Work with was extraordinary! He turned out to be a very competent and responsible specialist. The
-          projects were
-          completed on time and the result exceeded my expectations</p></li>
-      </ul>
-      </div>
-      <div class="arrows">
-      <svg class="arrows-left" width="24" height="24"><use class="arrows-icon-left" href="./img/icons.svg#icon-left"></use></svg>
-      <svg class="arrows-right" width="24" height="24"><use class="arrows-icon-right" href="./img/icons.svg#icon-right"></use></svg>
-      </div>
-    </section>
-    <!--<section work-together></section>-->  
+      </nav>
+      <a href="#worktogether" class="modal-link-to-footer order-mobile" aria-label="To Work together">Order the
+        project</a>
+    </div>
+  
+    <button type="button" class="close-btn" aria-label="close modal window">
+      <svg width="28" height="28" class="modal-close-btn">
+        <use href="./img/header/header-svg.svg#icon-close"></use>
+      </svg>
+    </button>
+  
+  </div>
+  <main>
+<section class="hero ">
+  <div class="container hero_container ">
 
-    <script type="module" src="./main.js"></script>
-  </body>
+    <h1 class="headline">
+      Hello.<br />
+      I’m Fullstack developer Lloyd Jefferson.
+    </h1>
+    <ul class="social_media">
+      <li class="social_item">
+        <a href="https://www.instagram.com/goitclub/" class="social_link" target="_blank">IG</a>
+      </li>
+      <li class="social_item">
+        <a href="https://www.facebook.com/goITclub/" class="social_link" target="_blank">FB</a>
+      </li>
+      <li class="social_item">
+        <a href="https://www.youtube.com/c/GoIT" class="social_link" target="_blank">YT</a>
+      </li>
+      <li class="social_item"><a href="https://github.com/Vol3odya/ProjectJavaScript" class="social_link"
+          target="_blank">GH</a></li>
+      <li class="social_item"><a href="mailto:lloydjefferson@gmail.com" class="social_link">lloydjefferson@gmail.com</a>
+      </li>
+    </ul>
+  </div>
+
+
+</section>
+<section class="aboutme" id="aboutme-section">
+  <!--hide h2-->
+  <h2 class="section-title visually-hidden"> ABOUT ME </h2>
+
+  <!-------------Section-1------------------->
+  <div class="container about-list">
+    <div class="about-list-conteiner">
+      <div class="text-box">
+        <p class="text-about">I work with people all over the world to create impressive and <span
+            style="color: rgba(237, 59, 68, 1);">functional</span> <span style="color:rgba(122, 122, 123);
+;">websites</span> that reflect each client's unique personality.</p>
+      </div>
+    </div>
+
+    <div class="aboutme-img">
+      <!--<img srcset="./img/aboutme/hero-photo.jpg 1x, ./img/aboutme/hero-photo@2x.jpg 2x"
+    src="./img/aboutme/hero-photo.jpg" alt="hero-photo">-->
+      <picture class="aboutme-img">
+        <source srcset="./img/aboutme/hero-photo@2x.jpg 2x, ./img/aboutme/hero-photo.jpg 1x " class="aboutme-img"
+          media="(min-width: 1376px)">
+        <source srcset="./img/aboutme/hero-photo-tablet@2x.jpg 2x, ./img/aboutme/hero-photo-tablet.jpg 1x "
+          class="aboutme-img" media="(min-width: 768px)">
+        <source srcset="./img/aboutme/hero-photo-mobile@2x.jpg 2x, ./img/aboutme/hero-photo-mobile.jpg 1x "
+          class="aboutme-img" media="(max-width: 767px)">
+        <img src="./img/aboutme/hero-photo.jpg" class="aboutme-img" alt="hero-photo">
+      </picture>
+    </div>
+  </div>
+
+  <!-----------------Section-2------------>
+
+  <div class="container cv">
+
+    <ul class="acc-container accordion-container">
+      <li class="ac ac-list">
+        <h3 class="ac-header my-header"> <button type="button" class="ac-trigger my-button"
+            style="color: rgba(250, 250, 250, 0.4);">ABOUT ME</button> </h3>
+        <div class="ac-panel my-text">
+          <p class="ac-text" style="color: #fafafa;">I am Lloyd Jefferson, a talented programmer with extensive
+            expertise in software development.
+            I have an understanding of different programming languages ​​and technologies, always ready to improve my
+            skills.
+            I always follow the latest trends and look for unconventional, creative solutions to problems.
+            I have a high level of analytical skills and am able to effectively solve
+            even the most difficult tasks encountered on the way.</p>
+
+          <p class="ac-text" style="color: #fafafa;">Able to work both independently and in a team. I can effectively
+            cooperate with colleagues, exchanging ideas
+            and finding optimal solutions. Professional maturity allows you to calmly cope with challenges and stressful
+            situations,
+            while maintaining a high quality of work. I am always looking for opportunities for self-improvement.
+            I actively study new technologies and practices to stay abreast of the latest innovations.
+            I have a strong understanding of various programming languages, frameworks and architectural concepts that
+            allow me to create efficient and scalable software.</p>
+        </div>
+      </li>
+
+      <li class="ac ac-list">
+        <h3 class="ac-header my-header"> <button type="button" class="ac-trigger my-button"
+            style="color: rgba(250, 250, 250, 0.4);">ROLE</button></h3>
+        <div class="ac-panel my-text">
+          <p class="ac-text my-text" style="color: #fafafa;">Frontend development</p>
+          <p class="ac-text my-text" style="color: #fafafa;">HeadlessCMS,Wordpress</p>
+          <p class="ac-text my-text" style="color: #fafafa;">Blender(enjoy)</p>
+        </div>
+      </li>
+
+      <li class="ac ac-list">
+        <h3 class="ac-header my-header"> <button type="button" class="ac-trigger my-button"
+            style="color: rgba(250, 250, 250, 0.4);">EDUCATION</button></h3>
+        <div class="ac-panel my-text-one">
+          <p class="ac-text my-text" style="color: #fafafa;">2018 - 2019 / Frontend Development Diploma, GoIT IT School,
+            New York</p>
+          <p class="ac-text my-text" style="color: #fafafa;">2019 - 2020 / Advanced Web Development Certificate, GoIT IT
+            School, New York</p>
+          <p class="ac-text my-text" style="color: #fafafa;">2020 - 2022 / Advanced Blender Animation Techniques, Udemy
+          </p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+
+
+
+  <!--------------Section-3------------->
+  <div class="container flex">
+    <div class="swiper skills-conteiner">
+      <ul class="swiper-wrapper skills">
+        <li class="swiper-slide skill-slide">HTML/CSS</li>
+        <li class="swiper-slide skill-slide">JavaScript</li>
+        <li class="swiper-slide skill-slide">React</li>
+        <li class="swiper-slide skill-slide">Node.js</li>
+        <li class="swiper-slide skill-slide">React Native</li>
+        <li class="swiper-slide skill-slide">Soft skills</li>
+        <li class="swiper-slide skill-slide">Git</li>
+      </ul>
+    </div>
+    <div class="swiper-button-next my-next"></div>
+    <!--<div class="swiper-scrollbar"></div>-->
+  </div>
+
+</section>
+<section class="benefits" id="benefits-section">
+  <div class="container">
+    <h2 class="benefits-title">Benefits of working with me</h2>
+    <div class="benefits-wrap">
+      <ul class="benefits-list">
+        <li class="benefits-item">
+          <div class="benefits-icon-wrap">
+            <svg class="benefits-icon" width="24" height="24">
+              <use href="./img/benefits/symbol-defs.svg#icon-user"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-item-title">Expertise</h3>
+          <p class="benefits-item-article">
+            As a highly experienced developer, I have deep knowledge of
+            programming and website development.
+          </p>
+        </li>
+        <li class="benefits-item">
+          <div class="benefits-icon-wrap">
+            <svg class="benefits-icon" width="24" height="24">
+              <use href="./img/benefits/symbol-defs.svg#icon-message"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-item-title">Communication</h3>
+          <p class="benefits-item-article">
+            Understanding your needs and wants is my priority and I am always
+            open to discussions and corrections.
+          </p>
+        </li>
+        <li class="benefits-item">
+          <div class="benefits-icon-wrap">
+            <svg class="benefits-icon" width="24" height="24">
+              <use href="./img/benefits/symbol-defs.svg#icon-brush"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-item-title">Art</h3>
+          <p class="benefits-item-article">
+            Thanks to my creative nature, I am ready to accept challenges and
+            help you bring your ideas to life.
+          </p>
+        </li>
+        <li class="benefits-item">
+          <div class="benefits-icon-wrap">
+            <svg class="benefits-icon" width="24" height="24">
+              <use href="./img/benefits/symbol-defs.svg#icon-hourglass"></use>
+            </svg>
+          </div>
+          <h3 class="benefits-item-title">Urgent execution</h3>
+          <p class="benefits-item-article">
+            I understand how important time is to you. Ready to work quickly and
+            efficiently, without reducing the quality of work.
+          </p>
+        </li>
+      </ul>
+
+      <a href="#worktogether" class="benefits-link">Order the project</a>
+    </div>
+  </div>
+</section>
+<section class="projects" id="projects-section">
+  <!-- <link rel="stylesheet" href="../css/projects.css"> -->
+  <div class="container">
+    <h2 class="projects-title">Projects</h2>
+    <div class="swiper projects-js">
+      <ul class="swiper-wrapper project-wraper">
+        <li class="swiper-slide projects-item">
+          <div class="project-flax">
+            <div class="project-flax-one">
+              <div class="projects-languages-wrap">
+                <div class="projects-languages">#react</div>
+                <div class="projects-languages">#js</div>
+                <div class="projects-languages">#node js</div>
+                <div class="projects-languages">#git</div>
+              </div>
+              <p class="text projects-text">Programming Across Borders: Ideas, Technologies, Innovations</p>
+              <a href="https://github.com/Vol3odya/ProjectJavaScript" target="_blank" class="projects-btn">See
+                project</a>
+            </div>
+            <div class="projects-image-wrap">
+              <img class="projects-image" src="./img/projects/project1.jpg" alt="project1"
+                srcset="./img/projects/project1.jpg 1x, ./img/projects/project1-2x.jpg 2x">
+            </div>
+          </div>
+        </li>
+
+        <li class="swiper-slide projects-item">
+          <div class="project-flax">
+            <div class="project-flax-one">
+              <div class="projects-languages-wrap">
+                <div class="projects-languages">#react</div>
+                <div class="projects-languages">#js</div>
+                <div class="projects-languages">#node js</div>
+                <div class="projects-languages">#git</div>
+              </div>
+              <p class="projects-text">Programming Across Borders: Ideas, Technologies, Innovations</p>
+              <a href="https://github.com/Vol3odya/ProjectJavaScript" target="_blank" class="projects-btn">See
+                project</a>
+            </div>
+            <div class="projects-image-wrap">
+              <img class="projects-image" src="./img/projects/project2.jpg" alt="project2"
+                srcset="./img/projects/project2.jpg 1x, ./img/projects/project2-2x.jpg 2x">
+            </div>
+          </div>
+        </li>
+        <li class="swiper-slide projects-item">
+          <div class="project-flax">
+            <div class="project-flax-one">
+              <div class="projects-languages-wrap">
+                <div class="projects-languages">#react</div>
+                <div class="projects-languages">#js</div>
+                <div class="projects-languages">#node js</div>
+                <div class="projects-languages">#git</div>
+              </div>
+              <p class="projects-text">Programming Across Borders: Ideas, Technologies, Innovations</p>
+              <a href="https://github.com/Vol3odya/ProjectJavaScript" target="_blank" class="projects-btn">See
+                project</a>
+            </div>
+            <div class="projects-image-wrap">
+              <img class="projects-image" src="./img/projects/project3.jpg" alt="project3"
+                srcset="./img/projects/project3.jpg 1x, ./img/projects/project3-2x.jpg 2x">
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="project-wrap">
+        <div class="project-button-prev swiper-button-prev"></div>
+        <div class="project-button-next swiper-button-next"></div>
+      </div>
+    </div>
+  </div>
+
+
+</section>
+<section class="faq-container container" id="faq-section">
+  <h2 class="faq-title">FAQ</h2>
+  <ul class="faq-accordion-container accordion-container">
+    <li class="ac faq-ac faq-border">
+      <h3 class="ac-header faq-ac-header">
+        <button type="button" class="ac-trigger faq-ac-trigger"
+          style="color: #fafafa; display: inline; font-weight: 600; font-size: 20px; line-height: 150%;">
+          <span class="faq-text">What programming languages are most often used in your project?</span>
+        </button>
+      </h3>
+      <div class="ac-panel faq-ac-panel">
+        <p class="ac-text faq-ac-text"
+          style="color: rgba(250, 250, 250, 0.6); font-weight: 500; font-size: 16px; line-height: 150%;">In the field of
+          web development, there are various technologies and programming languages. Typically, this includes a
+          combination of frontend (client side) and backend (server side) languages.</p>
+      </div>
+    </li>
+
+    <li class="ac faq-ac faq-border">
+      <h3 class="ac-header faq-ac-header">
+        <button type="button" class="ac-trigger faq-ac-trigger"
+          style="color: #fafafa; display: inline; font-weight: 600; font-size: 20px; line-height: 150%;">
+          <span class="faq-text">What are the deadlines for the project?</span>
+        </button>
+      </h3>
+      <div class="ac-panel faq-ac-panel">
+        <p class="ac-text faq-ac-text"
+          style="color: rgba(250, 250, 250, 0.6); font-weight: 500; font-size: 16px; line-height: 150%;">The terms of
+          project implementation depend to a large extent on a number of factors, such as the scope of the project, its
+          complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually
+          occurs during the planning phase of the project.</p>
+      </div>
+    </li>
+
+    <li class="ac faq-ac faq-border">
+      <h3 class="ac-header faq-ac-header">
+        <button type="button" class="ac-trigger faq-ac-trigger"
+          style="color: #fafafa; display: inline; font-weight: 600; font-size: 20px; line-height: 150%;">
+          <span class="faq-text">What payment methods do you accept?</span>
+        </button>
+      </h3>
+      <div class="ac-panel faq-ac-panel">
+        <p class="ac-text faq-ac-text"
+          style="color: rgba(250, 250, 250, 0.6); font-weight: 500; font-size: 16px; line-height: 150%;">Payment through
+          credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal,
+          as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+      </div>
+    </li>
+
+    <li class="ac faq-ac">
+      <h3 class="ac-header faq-ac-header">
+        <button type="button" class="ac-trigger faq-ac-trigger"
+          style="color: #fafafa; display: inline; font-weight: 600; font-size: 20px; line-height: 150%;">
+          <span class="faq-text">How can I contact you?</span>
+        </button>
+      </h3>
+      <div class="ac-panel faq-ac-panel">
+        <p class="ac-text faq-ac-text"
+          style="color: rgba(250, 250, 250, 0.6); font-weight: 500; font-size: 16px; line-height: 150%;">In the field of
+          web
+          development, there are various technologies and programming languages. Typically, this includes a
+          combination of frontend (client side) and backend (server side) languages.</p>
+      </div>
+    </li>
+
+    <li class="ac faq-ac">
+      <h3 class="ac-header faq-ac-header">
+        <button type="button" class="ac-trigger faq-ac-trigger"
+          style="color: #fafafa; display: inline; font-weight: 600; font-size: 20px; line-height: 150%;">
+          <span class="faq-text">Do you provide advice or support?</span>
+        </button>
+      </h3>
+      <div class="ac-panel faq-ac-panel">
+        <p class="ac-text faq-ac-text"
+          style="color: rgba(250, 250, 250, 0.6); font-weight: 500; font-size: 16px; line-height: 150%;">The terms of
+          project implementation depend to a large extent on a number of factors, such as the scope of the project, its
+          complexity, and the availability of resources. Determining exact deadlines is a difficult task, and it usually
+          occurs during the planning phase of the project.</p>
+      </div>
+    </li>
+
+    <li class="ac faq-ac">
+      <h3 class="ac-header faq-ac-header">
+        <button type="button" class="ac-trigger faq-ac-trigger"
+          style="color: #fafafa; display: inline; font-weight: 600; font-size: 20px; line-height: 150%;">
+          <span class="faq-text">What does the process of developing a software product look like from idea to
+            implementation?</span>
+        </button>
+      </h3>
+      <div class="ac-panel faq-ac-panel">
+        <p class="ac-text faq-ac-text"
+          style="color: rgba(250, 250, 250, 0.6); font-weight: 500; font-size: 16px; line-height: 150%;">Payment through
+          credit and debit cards such as Visa, MasterCard, specialized electronic payment systems such as PayPal,
+          as well as payments in cryptocurrencies such as Bitcoin, Ethereum and others.</p>
+      </div>
+    </li>
+
+  </ul>
+</section>
+<section class="cover-section">
+  <h2 class="visually-hidden">Covers</h2>
+  <div class="container cover-container">
+    <ul class="cover-list">
+      <li class="cover-item">
+        <img src="./img/covers/image-fruits.jpg" alt="Fruitbox"
+          srcset="./img/covers/image-fruits.jpg 1x, ./img/covers/image-fruits_2x.jpg 2x" loading="lazy"
+          class="cover-image" />
+      </li>
+      <li class="cover-item">
+        <img src="./img/covers/image-business.jpg" alt="StarlightStudio"
+          srcset="./img/covers/image-business.jpg 1x, ./img/covers/image-business_2x.jpg 2x" loading="lazy"
+          class="cover-image" />
+      </li>
+      <li class="cover-item">
+        <img src="./img/covers/image-power.jpg" alt="Energy Flow"
+          srcset="./img/covers/image-power.jpg 1x, ./img/covers/image-power_2x.jpg 2x" loading="lazy"
+          class="cover-image" />
+      </li>
+      <li class="cover-item">
+        <img src="./img/covers/image-discover.jpg" alt="English Excelence"
+          srcset="./img/covers/image-discover.jpg 1x, ./img/covers/image-discover_2x.jpg 2x" loading="lazy"
+          class="cover-image" />
+      </li>
+    </ul>
+    <ul class="cover-list">
+      <li class="cover-item">
+        <img src="./img/covers/image-vegetables.jpg" alt="Green Harvest"
+          srcset="./img/covers/image-vegetables.jpg 1x, ./img/covers/image-vegetables_2x.jpg 2x" loading="lazy"
+          class="cover-image" />
+      </li>
+      <li class="cover-item">
+        <img src="./img/covers/image-workout.jpg" alt="Energy Flow"
+          srcset="./img/covers/image-workout.jpg 1x, ./img/covers/image-workout_2x.jpg 2x" loading="lazy"
+          class="cover-image" />
+      </li>
+      <li class="cover-item">
+        <img src="./img/covers/image-brand.jpg" alt="Chego"
+          srcset="./img/covers/image-brand.jpg 1x, ./img/covers/image-brand_2x.jpg 2x" loading="lazy"
+          class="cover-image" />
+      </li>
+      <li class="cover-item">
+        <img src="./img/covers/image-wallet.jpg" alt="Wallet"
+          srcset="./img/covers/image-wallet.jpg 1x, ./img/covers/image-wallet_2x.jpg 2x" loading="lazy"
+          class="cover-image" />
+      </li>
+    </ul>
+    <ul class="cover-list">
+      <li class="cover-item">
+        <img src="./img/covers/image-mimino.jpg" alt="Mimino"
+          srcset="./img/covers/image-mimino.jpg 1x, ./img/covers/image-mimino_2x.jpg 2x" loading="lazy"
+          class="cover-image" />
+      </li>
+      <li class="cover-item">
+        <img src="./img/covers/image-costum.jpg" alt="Ukrainian traditional"
+          srcset="./img/covers/image-costum.jpg 1x, ./img/covers/image-costum_2x.jpg 2x" loading="lazy"
+          class="cover-image" />
+      </li>
+      <li class="cover-item">
+        <img src="./img/covers/image-wallet.jpg" alt="Wallet"
+          srcset="./img/covers/image-wallet.jpg 1x, ./img/covers/image-wallet_2x.jpg 2x" loading="lazy"
+          class="cover-image" />
+      </li>
+      <li class="cover-item">
+        <img src="./img/covers/image-power.jpg" alt="Power pulse"
+          srcset="./img/covers/image-power.jpg 1x, ./img/covers/image-power_2x.jpg 2x" loading="lazy"
+          class="cover-image" />
+      </li>
+    </ul>
+    <ul class="cover-list">
+      <li class="cover-item">
+        <img src="./img/covers/image-discover.jpg" alt="English Excelence"
+          srcset="./img/covers/image-discover.jpg 1x, ./img/covers/image-discover_2x.jpg 2x" loading="lazy"
+          class="cover-image" />
+      </li>
+      <li class="cover-item">
+        <img src="./img/covers/image-power.jpg" alt="Power pulse"
+          srcset="./img/covers/image-power.jpg 1x, ./img/covers/image-power_2x.jpg 2x" loading="lazy"
+          class="cover-image" />
+      </li>
+      <li class="cover-item">
+        <img src="./img/covers/image-fruits.jpg" alt="Fruitbox"
+          srcset="./img/covers/image-fruits.jpg 1x, ./img/covers/image-fruits_2x.jpg 2x" loading="lazy"
+          class="cover-image" />
+      </li>
+      <li class="cover-item">
+        <img src="./img/covers/image-business.jpg" alt="StarlightStudio"
+          srcset="./img/covers/image-business.jpg 1x, ./img/covers/image-business_2x.jpg 2x" loading="lazy"
+          class="cover-image" />
+      </li>
+    </ul>
+  </div>
+</section>
+<section class="reviews" id="reviews">
+  <div class="reviews-container container">
+    <h3 class="reviews-title">REVIEWS</h3>
+    <div class="swiper reviews-swiper">
+      <ul class="swiper-wrapper reviews-list">
+      </ul>
+    </div>
+    <div class="reviews-wrap">
+      <div class="swiper-button-prev review-button-prev"></div>
+      <div class="swiper-button-next review-button-next"></div>
+    </div>
+  </div>
+</section>
+<footer class="worktogether" id="worktogether">
+  <div class="container">
+    <div class="footer-wrap">
+      <div class="footer-top">
+        <img srcset="./img/worktogether/footer-image-tab_desk-2x.png 2x"
+          src="./img/worktogether/footer-image-tab_desk.png" alt="Lloyd Jefferson" class="footer-img" />
+        <h2 class="footer-title">
+          Let's <span class="footer-span">work</span>
+        </h2>
+        <h2 class="footer-title">together</h2>
+      </div>
+      <form class="footer-form js-form">
+        <div class="input-wrapper">
+          <input type="email" name="user-email" id="user-email" class="footer-form-input"
+            placeholder="clients@gmail.com" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required />
+          <div class="validation-message" id="email-validation-message"></div>
+        </div>
+
+        <div class="input-wrapper">
+          <input type="text" name="user-text" id="user-text" class="footer-form-input" placeholder="comments"
+            required />
+        </div>
+
+        <button type="submit" class="footer-form-btn js-modal-btn">Send</button>
+      </form>
+      <ul class="footer-contacts">
+        <li class="footer-contacts-item">
+          <a href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a>
+        </li>
+        <li class="footer-contacts-item">
+          <a href="tel:+3801111111111">+380 11 1111 11 11</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="worktogether-bg"></div>
+</footer>
+
+
+
+
+<!-- Modal window -->
+
+<!--<form class="js-feedback-form" autocomplete="off">
+    <label>
+      Email
+      <input type="email" name="email" autofocus />
+    </label>
+    <button type="submit">Submit</button>
+  </form>-->
+<div class="backdrop js-modal-backdrop">
+  <div class="modal ">
+    <button type="button" class="js-modal-close modal-close">
+      <svg class="modal-close-icon" width="12" height="12">
+        <use href="./img/icons.svg#icon-close-icon" />
+      </svg>
+    </button>
+    <h1 class="modal-title">Thank you for your interest in cooperation!</h1>
+    <p class="modal-descr">
+      The manager will contact you shortly to discuss further details and
+      opportunities for cooperation. Please stay in touch.
+    </p>
+  </div>
+</div>
+
+<div class="back-drop">
+  <div class="mob-menu">
+    <p>Menu</p>
+  </div>
+</div>
+</main>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
 </html>
