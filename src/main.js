@@ -142,9 +142,6 @@ export const swiperProjects = () => {
 }
 
 //faq
-import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
-
 export function faq() {
   const accordion = document.querySelector('.faq-accordion-container')
 
@@ -277,7 +274,6 @@ export const displayReviews = async () => {
 };
     const feedbackForm = document.querySelector('.js-form');
 const modalWindow = document.querySelector('.js-modal-backdrop');
-//const btnClosed = document.querySelector('.js-modal-close');
 
 document.addEventListener('keydown', function (e) {
   if (e.key === 'Escape' && modalWindow.classList.contains('is-open')) {
@@ -293,7 +289,7 @@ function eventHandler(e) {
 }
 
 function modalWindowClose(e) {
-    const modalClose = e.target.closest('.js-modal-close');//document.querySelector('.js-modal-close');//
+    const modalClose = e.target.closest('.js-modal-close');
   if (e.target === modalWindow || modalClose) {
     modalWindow.classList.remove('is-open');
     document.body.style.overflow = 'auto';
